@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My App - Foo</title>
+  </head>
+  <body>
+    <script src="../dist/foo.bundle.js"></script>
+    <script src="../dist/qux.bundle.js"></script>
+    <script defer>
+      const { quxModule } = window.quxModule;
+
+      const quxService = quxModule.quxService;
+
+      const { fooModule } = window.fooModule;
+      const fooService = fooModule.fooService;
+
+      fooService.fetchData().then(console.log);
+      fooService.sendData({ name: "Foo Data" }).then(console.log);
+      fooService.process();
+    </script>
+  </body>
+</html>

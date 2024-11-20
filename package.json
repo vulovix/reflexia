@@ -1,0 +1,33 @@
+{
+  "name": "reflexia",
+  "version": "1.0.0",
+  "scripts": {
+    "prebuild": "tsc --project tsconfig.build.json",
+    "build": "webpack --config webpack.config.js",
+    "postbuild": "echo 'Build completed!'",
+    "dev": "webpack --config webpack.node.config.js",
+    "dev:watch": "nodemon dist/bundle.js",
+    "dev:concurrently": "concurrently \"webpack --config webpack.node.config.js\" \"nodemon dist/bundle.js\""
+  },
+  "keywords": [
+    "oop",
+    "javascript",
+    "framework",
+    "reflexia"
+  ],
+  "author": "Ivan Vulović",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "reflect-metadata": "^0.2.2"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.6.3",
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-node-externals": "^3.0.0",
+    "nodemon": "^3.1.7"
+  }
+}
