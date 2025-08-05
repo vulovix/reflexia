@@ -4,7 +4,31 @@
   "files": [],
   "references": [
     {
-      "path": "./libs/common"
+      "path": "./libs/foo"
+    },
+    {
+      "path": "./libs/bar"
+    },
+    {
+      "path": "./libs/baz"
+    },
+    {
+      "path": "./libs/http"
+    },
+    {
+      "path": "./libs/logger"
+    },
+    {
+      "path": "./libs/di"
+    },
+    {
+      "path": "./libs/core"
+    },
+    {
+      "path": "./apps/cli"
+    },
+    {
+      "path": "./apps/server-express"
     }
   ]
 }

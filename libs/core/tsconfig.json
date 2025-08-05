@@ -1,0 +1,19 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "files": [],
+  "include": [],
+  "references": [
+    {
+      "path": "../di"
+    },
+    {
+      "path": "../logger"
+    },
+    {
+      "path": "../http"
+    },
+    {
+      "path": "./tsconfig.lib.json"
+    }
+  ]
+}

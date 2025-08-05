@@ -2,7 +2,7 @@
   "compilerOptions": {
     "composite": true,
     "declarationMap": true,
-    "emitDeclarationOnly": true,
+    "emitDeclarationOnly": false,
     "importHelpers": true,
     "isolatedModules": true,
     "lib": ["es2022"],
@@ -17,9 +17,15 @@
     "strict": true,
     "target": "es2022",
     "customConditions": ["development"],
-    "baseUrl": ".",
+    "baseUrl": "",
     "paths": {
-      "@reflexia/common": ["libs/common/src/index.ts"]
+      "@reflexia/bar": ["libs/bar/src/index.ts"],
+      "@reflexia/baz": ["libs/baz/src/index.ts"],
+      "@reflexia/core": ["libs/core/src/index.ts"],
+      "@reflexia/di": ["libs/di/src/index.ts"],
+      "@reflexia/foo": ["libs/foo/src/index.ts"],
+      "@reflexia/http": ["libs/http/src/index.ts"],
+      "@reflexia/logger": ["libs/logger/src/index.ts"]
     }
   }
 }

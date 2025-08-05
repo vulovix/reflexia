@@ -1,0 +1,29 @@
+{
+  "name": "@reflexia/server-express",
+  "version": "0.0.1",
+  "private": true,
+  "nx": {
+    "targets": {
+      "serve": {
+        "continuous": true,
+        "executor": "@nx/js:node",
+        "defaultConfiguration": "development",
+        "dependsOn": [
+          "build"
+        ],
+        "options": {
+          "buildTarget": "@reflexia/server-express:build",
+          "runBuildTargetDependencies": false
+        },
+        "configurations": {
+          "development": {
+            "buildTarget": "@reflexia/server-express:build:development"
+          },
+          "production": {
+            "buildTarget": "@reflexia/server-express:build:production"
+          }
+        }
+      }
+    }
+  }
+}
